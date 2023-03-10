@@ -1,0 +1,392 @@
+/* #ff7900
+#f16e00
+#000099
+#000066
+#0000cc */
+
+body{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+/* Part of loader */
+#preloder{
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 999999;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loader{
+    width: 50px;
+    height: 50px;
+    border: 5px solid;
+    color: #3498db;
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: loader 1.5s linear infinite;
+}
+
+@keyframes loader{
+    25%{
+        color: #f16e00;
+    }
+    50%{
+        color: #000066;
+    }
+    75%{
+        color: #ff7900;
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+/* Header */
+.offcanvas{
+    background: #f16e00;
+}
+
+.nav-item .footer__social a {
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 16px;
+}
+
+/* Devoir&&Interro */
+.spad{
+    background: rgb(248, 249, 250);
+}
+
+.spad a.btn-primary{
+    background-color: #ff7900;
+    border-color: #ff7900;
+    font-weight: bold;
+    padding: 10px 30px 10px 30px;
+}
+
+.spad a.btn-primary:hover{
+    transition: 0.3s;
+    color: #ff7900;
+    background-color: white;
+}
+
+/* Présentation */
+a.btn-primary{
+    background-color: #ff7900;
+    border-color: #ff7900;
+    font-weight: bold;
+    padding: 10px 30px 10px 30px;
+}
+
+a.btn-primary:hover{
+    border-color: #ff7900;
+    transition: 0.3s;
+    color: #ff7900;
+    background-color: white;
+}
+
+/* Part Devoir */
+.breadcrumb-option{
+    width: 100%;
+    height: 500px;
+}
+
+.breadcrumb__text{
+    position: relative;
+    top: 70px;
+}
+
+.breadcrumb__text h1 {
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: #f16e00;
+    font-weight: bold;
+    font-size: 72px;
+    margin-bottom: 10px;
+}
+
+.breadcrumb__links a {
+    font-size: 18px;
+    color: #ffffff;
+    margin-right: 22px;
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+}
+
+.breadcrumb__links span {
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+    display: inline-block;
+}
+
+
+/* Footer */
+.set-bg{
+    background: #f16e00;
+}
+
+.footer{
+    padding-top: 60px;
+    /* background-image: url(img/footer-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center; */
+}
+
+.footer__about {
+    margin-bottom: 40px;
+}
+
+.footer__about .footer__logo {
+    margin-bottom: 28px;
+}
+
+.footer__about .footer__logo a{
+    display: inline-block;
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.footer__about h4 {
+    color: black;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.footer__about ul {
+    margin-bottom: 22px;
+}
+
+.footer__about ul li {
+    list-style: none;
+    font-size: 16px;
+    color: black;
+    line-height: 28px;
+    position: relative;
+    left: -28px;
+}
+
+.footer__about .footer__social a {
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 16px;
+}
+
+.footer__widget {
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.footer__widget h4 {
+    color: black;
+    text-decoration: underline;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.footer__widget ul {
+    width: 46%;
+    float: left;    
+}
+
+.footer__widget ul li{
+    list-style: none; 
+}
+
+.footer__widget ul li a {
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    line-height: 30px;
+    text-decoration: none;
+    position: relative;
+    left: -25px;
+}
+
+.footer__newslatter {
+    margin-bottom: 40px;
+}
+
+.footer__newslatter h4 {
+    color: black;
+    text-decoration: underline;
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+
+.footer__newslatter form {
+    position: relative;
+    margin-bottom: 28px;
+}
+
+.footer__newslatter form input {
+    width: 100%;
+    height: 48px;
+    font-size: 16px;
+    color: black;
+    border: none;
+    padding-left: 20px;
+}
+
+.footer__newslatter form button {
+    font-size: 18px;
+    color: black;
+    background: #ff7900;
+    border: none;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding: 0 15px 0 25px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+}
+
+.footer__newslatter__find h5 {
+    font-size: 20px;
+    color: black;
+    text-decoration: underline;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.footer__newslatter__find .footer__newslatter__find__links a {
+    display: inline-block;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    margin-right: 16px;
+    transition: all, 0.3s;
+}
+
+.footer__copyright {
+    border-top: 1px solid white;
+    padding: 15px 0 12px;
+    margin-top: 35px;
+}
+
+.footer__copyright__links {
+    text-align: right;
+}
+
+.footer__copyright__links li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+}
+
+.footer__copyright__links li a {
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+/*Part Contact*/
+.contact{
+    padding-top: 100px;
+    padding-bottom: 100px
+}
+
+.contact__widget__item {
+    margin-bottom: 42px;
+}
+
+.contact__widget__item h4 {
+    color: black;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.contact__widget__item ul li {
+    list-style: none;
+    font-size: 16px;
+    color: #777C81;
+    line-height: 26px;
+    position: relative;
+    left: -30px;
+}
+
+.contact__widget__time__item ul li {
+    list-style: none;
+    font-size: 16px;
+    color: #777C81;
+    line-height: 26px;
+    left: -30px;
+    position: relative;
+}
+
+.contact__widget__time__item ul li span {
+    font-weight: 700;
+    color: #19191A;
+}
+
+.contact__form {
+    height: 50px;
+}
+
+.contact__form h2 {
+    color: black;
+    font-weight: bold;
+    margin-bottom: 34px;
+}
+
+.contact__form form input {
+    border: none;
+    border-bottom: 1px solid #E4E4E4 !important;
+    width: 100%;
+    font-size: 16px;
+    color: #777C81;
+    border: none;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    outline: none;
+}
+
+.contact__form form textarea {
+    border: none;
+    border-bottom: 1px solid #E4E4E4 !important;
+    width: 100%;
+    font-size: 16px;
+    color: #777C81;
+    border: none;
+    height: 85px;
+    resize: none;
+    margin-bottom: 40px;
+    outline: none;
+}
+
+.contact__form form button {
+    font-size: 17px;
+    font-weight: 500;
+    display: inline-block;
+    border: none;
+    background: transparent;
+    padding: 2px 0;
+    position: relative;
+    outline: none;
+}
+
+.contact__form form button::before {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background: #ff7900;
+    content: "";
+}
